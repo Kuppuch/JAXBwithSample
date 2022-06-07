@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Book xmlns="http://NamespaceTest.com/Book"
+      xsi:schemaLocation="http://NamespaceTest.com/Book book.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>1</id>
+    <name>ИМЯЯЯЯ</name>
+</Book>

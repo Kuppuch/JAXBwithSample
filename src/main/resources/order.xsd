@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://isim.vlsu.ru/schema/order"
+            xmlns:tns="http://isim.vlsu.ru/schema/order"
+            elementFormDefault="qualified">
+
+   <xsd:complexType name="orderType">
+      <xsd:sequence>
+         <xsd:element name="customer" type="tns:customerType"/>
+         <xsd:element name="lineItems" type="tns:lineItemsType"/>
+      </xsd:sequence>
+   </xsd:complexType>
+
+   <xsd:element name="order" type="tns:orderType"/>
+   <xsd:complexType name="customerType">
+      <xsd:sequence>
+         <xsd:element name="firstName" type="xsd:string"/>
+         <xsd:element name="lastName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="lineItemsType">
+      <xsd:sequence>
+         <xsd:element name="lineItem" type="tns:lineItemType"
+             maxOccurs="20"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="lineItemType">
+      <xsd:sequence/>
+        <xsd:attribute name="sku" type="xsd:positiveInteger"/>
+        <xsd:attribute name="quantity" type="xsd:double"/>
+    </xsd:complexType>
+</xsd:schema>

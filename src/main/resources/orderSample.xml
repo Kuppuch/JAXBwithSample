@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<order xmlns="http://isim.vlsu.ru/schema/order"
+       xsi:schemaLocation="http://isim.vlsu.ru/schema/order order.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customer>
+        <firstName>Рома</firstName>
+        <lastName>Куппе</lastName>
+    </customer>
+    <lineItems>
+        <lineItem/>
+    </lineItems>
+</order>
